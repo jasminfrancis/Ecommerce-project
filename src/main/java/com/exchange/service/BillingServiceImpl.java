@@ -28,7 +28,7 @@ public class BillingServiceImpl implements BillingService {
         BigDecimal exchangeRate = currencyExchangeService.getExchangeRate(bill.getOriginalCurrency(), bill.getTargetCurrency());
 
         System.out.println("exchangeRatse=s==>"+exchangeRate);
-        System.out.println("discountedAmount=>"+discountedAmount);
+        System.out.println("discountedAmcount=>"+discountedAmount);
         BigDecimal payableAmount =discountedAmount.multiply(exchangeRate) ;
         System.out.println("payableAmount=>"+payableAmount);
         return new APIResponse<>(ResponseMessage.DATA_RETRIEVED_SUCCES,ResponseMessage.DATA_RETRIEVED_SUCCES,payableAmount, HttpStatus.OK.value());
