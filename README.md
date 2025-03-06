@@ -50,7 +50,7 @@ Include the token in the Authorization header when calling the /api/calculate en
 Authorization: Bearer <your_jwt_token>
 Content-Type:application/json
 
-API Key for Currency Exchange
+### API Key for Currency Exchange
 The application uses the Open Exchange Rates API for fetching real-time currency exchange rates. You will need an API key from the Open Exchange Rates platform to make the currency exchange API work.
 Replace the placeholder in application.properties:
 currency.api.key=jasminfrancis
