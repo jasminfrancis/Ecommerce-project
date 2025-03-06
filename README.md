@@ -4,9 +4,16 @@
 
 This Spring Boot application calculates the total payable amount for a bill in a specified currency after applying discounts. It integrates with a third-party currency exchange API to retrieve real-time exchange rates and provides functionality to calculate applicable discounts. The application exposes a single API endpoint: `/api/calculate` to calculate the payable amount based on user inputs.
 
-## Endpoints
+### Setting up the Project
+1. Clone the Repository:
+    *  git clone git@github.com:jasminfrancis/Ecommerce-project.git
+    *  After cloning you will get project folder named as Ecommerce-project(If asking the password give:GitPassword@123)
+2. 
 
-### `/api/calculate`
+### Endpoints
+ 
+ Default port :8085
+## `http://localhost:8085/api/calculate`
 
 This endpoint allows users to submit a bill in one currency and get the payable amount in another currency after applying discounts. The request body should contain the following information:
 
@@ -38,11 +45,11 @@ This endpoint allows users to submit a bill in one currency and get the payable 
     "response": 1011.7553875
 }
 ```
-Description of Parameters:
+### Description of Parameters:
 
 
 
-Authentication:
+### Authentication:
 
 For secure access, the application uses JWT authentication. To obtain a token, use the /api/login endpoint (as described in the documentation).
 Include the token in the Authorization header when calling the /api/calculate endpoint:
@@ -54,3 +61,9 @@ Content-Type:application/json
 The application uses the Open Exchange Rates API for fetching real-time currency exchange rates. You will need an API key from the Open Exchange Rates platform to make the currency exchange API work.
 Replace the placeholder in application.properties:
 currency.api.key=jasminfrancis
+
+
+### Technologies Used
+* Spring Boot - For building the backend API
+* JWT - For authentication
+* Open Exchange Rates API - For real-time currency exchange rates
