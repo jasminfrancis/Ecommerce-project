@@ -29,15 +29,15 @@ This endpoint allows users to submit a bill in one currency and get the payable 
 ```
 
  
-Response Format:
-
+### Response Format:
+```json
 {
     "message": "Data retrieved success",
     "status": "Data retrieved success",
     "httpCode": 200,
     "response": 1011.7553875
 }
-
+```
 Description of Parameters:
 
 
