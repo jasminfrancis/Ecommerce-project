@@ -21,7 +21,7 @@ This Spring Boot application calculates the total payable amount for a bill in a
 }
 
 ### Response Format:
-```json
+
 {
     "message": "Data retrieved success",
     "status": "Data retrieved success",
