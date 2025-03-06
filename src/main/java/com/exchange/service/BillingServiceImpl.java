@@ -27,7 +27,7 @@ public class BillingServiceImpl implements BillingService {
         // Get the exchange rate for currency conversion
         BigDecimal exchangeRate = currencyExchangeService.getExchangeRate(bill.getOriginalCurrency(), bill.getTargetCurrency());
 
-        System.out.println("exchangeRate===>"+exchangeRate);
+        System.out.println("exchangeRatse=s==>"+exchangeRate);
         System.out.println("discountedAmount=>"+discountedAmount);
         BigDecimal payableAmount =discountedAmount.multiply(exchangeRate) ;
         System.out.println("payableAmount=>"+payableAmount);
