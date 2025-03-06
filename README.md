@@ -19,3 +19,12 @@ This Spring Boot application calculates the total payable amount for a bill in a
 "originalCurrency": "USD",
 "targetCurrency": "AED"
 }
+
+### Response Format:
+```json
+{
+    "message": "Data retrieved success",
+    "status": "Data retrieved success",
+    "httpCode": 200,
+    "response": 1011.7553875
+}
