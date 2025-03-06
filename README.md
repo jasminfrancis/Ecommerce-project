@@ -26,7 +26,7 @@ This endpoint allows users to submit a bill in one currency and get the payable 
   "originalCurrency": "USD",
   "targetCurrency": "AED"
 }
-
+```
 
  
 Response Format:
