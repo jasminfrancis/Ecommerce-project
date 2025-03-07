@@ -114,7 +114,6 @@ To run tests and generate the JaCoCo test coverage report, use the following Gra
 
 ```sh
 ./gradlew test jacocoTestReport
-
 ```
 ### **1. Clean and Build**
 ```sh
