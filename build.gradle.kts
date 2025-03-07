@@ -1,8 +1,11 @@
+import org.gradle.internal.declarativedsl.analysis.DefaultDataClass.Empty.properties
+
 plugins {
 	java
 	id("org.springframework.boot") version "3.4.3"
 	id("io.spring.dependency-management") version "1.1.7"
 	id ("jacoco" )// Add JaCoCo plugin
+	id("org.sonarqube") version "4.4.1.3373"
 }
 
 group = "com.exchange"
@@ -14,6 +17,13 @@ java {
 	}
 }
 
+sonarqube {
+	properties {
+		property("sonar.projectKey", "Billing-Apllication")
+		property("sonar.host.url", "http://localhost:9000")
+		property("sonar.login", "sqp_836604b7c9fe53c92b6d528fe804487c1f32e23d") // Replace with your token
+	}
+}
 configurations {
 	compileOnly {
 		extendsFrom(configurations.annotationProcessor.get())
@@ -47,6 +57,8 @@ dependencies {
 jacoco {
 	toolVersion = "0.8.11"  // Use latest JaCoCo version
 }
+
+
 tasks.withType<Test> {
 	useJUnitPlatform()
 
