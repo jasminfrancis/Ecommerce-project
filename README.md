@@ -138,6 +138,9 @@ To run tests and generate the JaCoCo test coverage report, use the following Gra
 ### **2. Viewing the Coverage Report**
 build/jacocoHtml/index.html
 
+### Logging
+* Logs are saved in the logs/application.log
+
 ### Dependencies
 * Spring Boot - For building the backend API
 * JWT (JSON Web Token) for authentication
