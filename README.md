@@ -9,6 +9,7 @@ Prerequisites
  * Java 21 or higher
  * Gradle (for build)
  * Postman or any REST client for testing the APIs
+ * jacoco Plugin
 
 ### Setting up the Project
 1. Clone the Repository:
@@ -17,10 +18,10 @@ Prerequisites
 
 
 ### API Documentation
-Default port :8085
-Login Endpoint (POST /api/login)
-Local endpoint (POST http://localhost:8085/api/login)
-* This endpoint authenticates a user and returns a JWT token.
+ * Default port :8085( actual deployment you can use any. 8085 port used only for development)
+ * Login Endpoint (POST /api/login)
+ * Local endpoint (POST http://localhost:8085/api/login)
+ * This endpoint authenticates a user and returns a JWT token.
 ### Request Format:
 ```json
 {
@@ -42,13 +43,13 @@ Local endpoint (POST http://localhost:8085/api/login)
 
 This endpoint allows users to submit a bill in one currency and get the payable amount in another currency after applying discounts. The request body should contain the following information:
 
-Billing endpoint :(POST Request to /api/calculate)
-Local endpoint: http://localhost:8085/api/calculate
+* Billing endpoint :(POST Request to /api/calculate)
+* Local endpoint: http://localhost:8085/api/calculate
 
 Headers:
 
-Authorization: Bearer <your_jwt_token_here>
-Content-Type:application/json
+* Authorization: Bearer <your_jwt_token_here>
+* Content-Type:application/json
 
 ### Request Format:
 ```json
