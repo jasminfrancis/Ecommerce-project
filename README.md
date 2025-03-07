@@ -140,6 +140,13 @@ To run tests and generate the JaCoCo test coverage report, use the following Gra
 build/jacocoHtml/index.html
 ```
 
+###  SonarQube Report for code quality
+
+* Note:Should start the SonarQube server 
+* Default host:http://localhost:9000/
+```sh
+./gradlew sonarqube
+```
 ### Logging
 * Logs are saved in the logs/application.log
 
@@ -152,3 +159,4 @@ build/jacocoHtml/index.html
 * Gradle for project build and dependency management
 * JUnit 5 for unit testing
 * JaCoCo Test Coverage Report 
+* SonarQube for the code quality summary
