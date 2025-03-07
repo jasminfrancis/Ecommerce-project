@@ -40,6 +40,7 @@ dependencies {
 	testImplementation ("org.mockito:mockito-junit-jupiter")
 	testImplementation ("org.junit.jupiter:junit-jupiter-api")
 	testRuntimeOnly ("org.junit.jupiter:junit-jupiter-engine")
+	implementation("org.slf4j:slf4j-api:2.0.0")
 
 }
 

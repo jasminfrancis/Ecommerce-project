@@ -10,4 +10,6 @@ public class Bill {
     private List<Item> items;
     private String originalCurrency;
     private String targetCurrency;
+
+
 }

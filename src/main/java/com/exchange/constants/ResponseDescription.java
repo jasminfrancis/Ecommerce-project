@@ -6,4 +6,8 @@ public class ResponseDescription {
 	public static final String FILE_NOT_FOUND = "File Not Found";
 	public static final String LOGIN_SUCESS = "Login success";
 
+
+	private ResponseDescription(){
+		throw new UnsupportedOperationException("Unsupported operation exceptions");
+	}
 }

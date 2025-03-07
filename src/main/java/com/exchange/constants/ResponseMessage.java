@@ -6,7 +6,9 @@ public class ResponseMessage {
 	public static final String DATA_RETRIEVED_SUCCES="Data retrieved success";
 	public static final String INVALID_CREDENTAILS="Invalid credentials";
 
-
+	private ResponseMessage(){
+		throw new UnsupportedOperationException("Unsupported operation exceptions");
+	}
 
 
 }
