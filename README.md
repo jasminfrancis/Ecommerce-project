@@ -136,7 +136,9 @@ To run tests and generate the JaCoCo test coverage report, use the following Gra
 ./gradlew clean build jacocoTestReport
 ```
 ### **2. Viewing the Coverage Report**
+```sh
 build/jacocoHtml/index.html
+```
 
 ### Logging
 * Logs are saved in the logs/application.log
