@@ -1,4 +1,4 @@
-# Currency Exchange and Discount Calculation Application
+# Billing Application
 
 ## Overview
 
@@ -13,12 +13,13 @@ Prerequisites
 ### Setting up the Project
 1. Clone the Repository:
     *  git clone git@github.com:jasminfrancis/Ecommerce-project.git
-    *  After cloning you will get project folder named as Ecommerce-project(If asking the password give:GitPassword@123)
+    *  After cloning you will get project folder named as Ecommerce-project(If asking the password give:GitPassword@123) or download the zip file
 
 
 ### API Documentation
 Default port :8085
-Login Endpoint (POST http://localhost:8085/api/login)
+Login Endpoint (POST /api/login)
+Local endpoint (POST http://localhost:8085/api/login)
 * This endpoint authenticates a user and returns a JWT token.
 ### Request Format:
 ```json
@@ -41,9 +42,8 @@ Login Endpoint (POST http://localhost:8085/api/login)
 
 This endpoint allows users to submit a bill in one currency and get the payable amount in another currency after applying discounts. The request body should contain the following information:
 
-POST Request to /api/calculate
-
-URL: http://localhost:8085/api/calculate
+Billing endpoint :(POST Request to /api/calculate)
+Local endpoint: http://localhost:8085/api/calculate
 
 Headers:
 
@@ -68,7 +68,6 @@ Content-Type:application/json
 }
 ```
 
- 
 ### Response Format:
 ```json
 {
@@ -104,8 +103,25 @@ Content-Type:application/json
 ### API Key for Currency Exchange
 The application uses the Open Exchange Rates API for fetching real-time currency exchange rates. You will need an API key from the Open Exchange Rates platform to make the currency exchange API work.
 Replace the placeholder in application.properties:
-currency.api.key=jasminfrancis
+* currency.api.key=jasminfrancis (But realtime need more specific keys should be added)
 
+
+
+## Test Coverage Report (JaCoCo)
+
+### **1. Running Tests and Generating Coverage Report**
+To run tests and generate the JaCoCo test coverage report, use the following Gradle command:
+
+```sh
+./gradlew test jacocoTestReport
+
+```
+### **1. Clean and Build**
+```sh
+./gradlew clean build jacocoTestReport
+```
+### **2. Viewing the Coverage Report**
+build/jacocoHtml/index.html
 
 ### Dependencies
 * Spring Boot - For building the backend API
@@ -114,3 +130,4 @@ currency.api.key=jasminfrancis
 * Lombok for simplifying Java code
 * Gradle for project build and dependency management
 * JUnit 5 for unit testing
+* JaCoCo Test Coverage Report 
