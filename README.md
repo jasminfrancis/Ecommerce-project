@@ -78,6 +78,23 @@ Headers:
     "response": 1011.7553875
 }
 ```
+
+## **Features**
+✅ Apply different discounts based on user type  
+✅ Identify grocery vs. non-grocery items for discount calculation  
+✅ Convert the final bill amount from `originalCurrency` to `targetCurrency`
+## **Discount Calculation Logic**
+The discount calculation is based on **user type(user)** and **item category(grocery)**.
+
+## **API Parameters**
+| Parameter | Description |
+|-----------|-------------|
+| **user** | Determines the type of user. Possible values: `"Employee"`, `"Affiliate"`, `"CustomerForOverTwoYears"`, or `"RegularUser"`. |
+| **items** | List of purchased items, each with a `name`, `price`, and `category` (`grocery` or `non-grocery`). |
+| **originalCurrency** | The currency in which the bill amount is originally calculated. |
+| **targetCurrency** | The currency to which the final **payable amount** should be converted. |
+
+
 ### Description of Parameters:
 
 * user- 3 types of users. Employee,Affiliate,customerForOverTwoYears. Based on the user provide the discount
