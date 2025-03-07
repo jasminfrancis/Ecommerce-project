@@ -33,9 +33,12 @@ public class DiscountService {
             percentageDiscount = BigDecimal.valueOf(0.05);
         }
 
-        BigDecimal discountAmount = totalAmount.subtract(groceryAmount).multiply(percentageDiscount);
+        BigDecimal percentageDiscountAmount = totalAmount.subtract(groceryAmount).multiply(percentageDiscount);
+        System.out.println("discountAmount==>"+percentageDiscountAmount);
         BigDecimal flatDiscount = BigDecimal.valueOf((totalAmount.intValue() / 100) * 5);
-        BigDecimal finalAmount = totalAmount.subtract(discountAmount).subtract(flatDiscount);
+        System.out.println("flatDiscount==>"+flatDiscount);
+        BigDecimal finalAmount = totalAmount.subtract(percentageDiscountAmount).subtract(flatDiscount);
+        System.out.println("finalAmount==>"+finalAmount);
 
         return finalAmount;
     }

@@ -24,8 +24,8 @@ public class CurrencyExchangeService {
         RestTemplate restTemplate = new RestTemplate();
         String url = apiUrl.replace("{baseCurrency}", baseCurrency).replace("{apiKey}", apiKey);
         CurrencyApiResponse response = restTemplate.getForObject(url, CurrencyApiResponse.class);
-        System.out.println("Response Object: " + response);
-        System.out.println("Response Object: " + response.getRates());
+       // System.out.println("Response Object: " + response);
+        //System.out.println("Response Object: " + response.getRates());
 
         if (response != null && response.getRates().containsKey(targetCurrency)) {
             return BigDecimal.valueOf(response.getRates().get(targetCurrency));
