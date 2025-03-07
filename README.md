@@ -144,6 +144,7 @@ build/jacocoHtml/index.html
 * Logs are saved in the logs/application.log
 
 ### Dependencies
+
 * Spring Boot - For building the backend API
 * JWT (JSON Web Token) for authentication
 * Open Exchange Rates API - For real-time currency exchange rates
