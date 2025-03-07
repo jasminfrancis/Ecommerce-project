@@ -95,35 +95,33 @@ The discount calculation is based on **user type(user)** and **item category(gro
 | **targetCurrency** | The currency to which the final **payable amount** should be converted. |
 
 
-### Description of Parameters:
-
-* user- 3 types of users. Employee,Affiliate,customerForOverTwoYears. Based on the user provide the discount
-* items-Purchasing items and their category.(category =grocery) for identifying the grocery item give proper  discounts
-* originalCurrency- Base courrency (bill amount currency)
-* targetCurrency-Conversion currency(payable amount currency )
-
 ### Authentication:
 
 For secure access, the application uses JWT authentication. To obtain a token, use the /api/login endpoint (as described in the documentation).
 Include the token in the Authorization header when calling the /api/calculate endpoint:
 
-Authorization: Bearer <your_jwt_token>
-Content-Type:application/json
+* Authorization: Bearer <your_jwt_token>
+* Content-Type:application/json
 
 
 ### Running the Application
 1. Build the project:
+```sh
    ./gradlew build
+   ```
 2. Run the application:
+```sh
    ./gradlew bootRun
-
+   ```
+3. Refreshing the dependencies
+```sh
+   ./gradlew build --refresh-dependencies
+  ```
 
 ### API Key for Currency Exchange
 The application uses the Open Exchange Rates API for fetching real-time currency exchange rates. You will need an API key from the Open Exchange Rates platform to make the currency exchange API work.
 Replace the placeholder in application.properties:
 * currency.api.key=jasminfrancis (But realtime need more specific keys should be added)
-
-
 
 ## Test Coverage Report (JaCoCo)
 
