@@ -15,7 +15,7 @@ Prerequisites
 ### Setting up the Project
 1. Clone the Repository:
     *  git clone git@github.com:jasminfrancis/Ecommerce-project.git
-    *  After cloning you will get project folder named as Ecommerce-project(If asking the password give:GitPassword@123) or download the zip file
+    *  After clone you will get project folder named as Ecommerce-project(If asking the password give:GitPassword@123) or download the zip file
 
 
 ### API Documentation
