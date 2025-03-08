@@ -10,6 +10,7 @@ Prerequisites
  * Gradle (for build)
  * Postman or any REST client for testing the APIs
  * jacoco Plugin
+ * SonarQube
 
 ### Setting up the Project
 1. Clone the Repository:
