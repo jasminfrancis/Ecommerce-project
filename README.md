@@ -81,6 +81,7 @@ Headers:
 ```
 
 ## **Features**
+
 ✅ Apply different discounts based on user type  
 ✅ Identify grocery vs. non-grocery items for discount calculation  
 ✅ Convert the final bill amount from `originalCurrency` to `targetCurrency`
